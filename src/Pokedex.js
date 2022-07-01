@@ -18,9 +18,11 @@ function Pokedex() {
 	return (
 		<div className="Pokedex">
 			<h1>Pokedex!</h1>
-			{pokemon.map((p, idx) => (
-				<Pokecard key={idx} p={p} />
-			))}
+			<div className="Pokedex-cards">
+				{pokemon.map((p, idx) => (
+					<Pokecard key={idx} p={p} />
+				))}
+			</div>
 		</div>
 	);
 }
