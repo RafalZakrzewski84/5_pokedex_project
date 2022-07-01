@@ -7,13 +7,14 @@ const POKE_API =
 	'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/';
 
 function Pokecard(props) {
-	let imgSrc = `${POKE_API}${props.id}.png`;
+	console.log(props);
+	let imgSrc = `${POKE_API}${props.p.id}.png`;
 	return (
 		<div className="Pokecard">
-			<h1>{props.name}</h1>
-			<img src={imgSrc} alt={props.name} />
-			<div>Type: {props.type}</div>
-			<div>EXP: {props.base_experience}</div>
+			<h1>{props.p.name}</h1>
+			<img src={imgSrc} alt={props.p.name} />
+			<div>Type: {props.p.type}</div>
+			<div>EXP: {props.p.base_experience}</div>
 		</div>
 	);
 }
