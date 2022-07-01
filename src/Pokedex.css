@@ -1,3 +1,20 @@
+.Pokedex {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+.Pokedex-win{
+    background-color: lightgreen;
+}
+.Pokedex-loose{
+    background-color: lightcoral;
+}
+
+.Pokedex-span {
+    font-size: 2rem;
+}
+
 .Pokedex-cards {
     display: flex;
     flex-wrap: wrap;
